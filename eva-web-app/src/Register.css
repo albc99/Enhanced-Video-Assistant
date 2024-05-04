@@ -1,0 +1,90 @@
+/* 
+ * This CSS file styles the Register component.
+ *
+ */
+.register-container {
+    margin: 0;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-color: #24252f;
+  }
+  
+  .register-container form {
+    max-width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; 
+  }
+  
+  .register-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff; 
+  }
+  
+  .register-container input[type="text"],
+  .register-container input[type="password"],
+  .register-container input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    background-color: #fff; 
+    color: #333; 
+  }
+  
+  .register-container input[type="text"]:focus,
+  .register-container input[type="password"]:focus,
+  .register-container input[type="email"]:focus {
+    border-color: #cfb456; 
+    outline: none;
+  }
+  
+  .register-container button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #24252f; 
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .register-container button:hover,
+  .register-container button:focus {
+    background-color: #cfb456; 
+    outline: none;
+  }
+  
+  .register-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-footer a {
+    color: #cfb456; 
+    text-decoration: none;
+  }
+  
+  .register-footer a:hover {
+    text-decoration: underline; 
+  }
+  

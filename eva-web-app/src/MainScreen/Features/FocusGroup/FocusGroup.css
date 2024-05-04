@@ -1,0 +1,163 @@
+/* 
+ * This CSS file styles the FocusGroup component and its child components.
+ */
+
+.focus-group {
+    background: #393844;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-radius: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width:100%;
+    height: 100%;
+  }
+  
+  .focus-group h2 {
+    color: #d4d2d2;
+    text-align: center;
+  }
+
+  .focus-group h3 {
+    color: #000;
+    text-align: center;
+  }
+
+  .focusgroup-feedback-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    border-radius: 1vh;
+    background-color: #393844;
+    height: 100%;
+    overflow: hidden;
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+    padding:1%;
+    height: auto;
+  }
+  
+  .tabs button {
+    width: 40%;
+    padding:4.5%;
+    background-color: #000000; 
+    color: #ffffff; 
+    border-radius: 1vh;
+    border-color: black;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    background-color: #cfb456;
+    color: rgb(0, 0, 0);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    height: 85%;
+
+  }
+
+  .content h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .content p {
+    margin-bottom: 1%;
+    color: #ffffff;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fg-generate-btn {
+    padding: 1vh;
+    width: 100%;
+    background-color: #cfb456;
+    cursor: pointer;
+    margin-left: 20%;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2%;
+  }
+  
+  .fg-generate-btn:hover {
+    background-color: #d6ae48;
+  }
+  .send-to-gpt-btn{
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 20%;
+    color:#cfb456;
+  }
+
+  .loading {
+    width: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #0000;
+    border-right-color: #ffa50097;
+    position: relative;
+    animation: l24 1s infinite linear;
+  }
+  .loading:before,
+  .loading:after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
+  }
+  .loading:after {
+    animation-duration: 4s;
+  }
+  @keyframes l24 {
+    100% {transform: rotate(1turn)}
+}
+
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100%;
+  overflow: hidden;
+}
+
+.feedback-content {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  overflow-y: auto;
+}
+
+.feedback-content p{
+  font-size: 1.1vw;
+}
+.fg-generate-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.fg-feedback-container button {
+  flex: none; 
+}

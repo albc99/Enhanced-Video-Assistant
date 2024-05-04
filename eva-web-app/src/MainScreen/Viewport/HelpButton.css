@@ -1,0 +1,67 @@
+.help-button{
+    background-color: #cfb456;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-popup-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.2s ease-in-out;
+}
+.help-popup-modal{
+    color: rgb(2, 2, 2);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(248, 244, 244);
+    border: 1px solid black;
+    z-index: 1;
+    width: 55vw;
+    height:65vh;
+    left: 20vw;
+    top:15vh;
+    padding:1vw;
+    border-radius: 2vh;
+    align-content: center;
+}  
+  .help-modal-content {
+    font-size: 1.1vw;
+    padding: 2%;
+    width: 100%;
+    height:90%;
+    overflow-y: auto;
+    margin-bottom: 2%;
+  }
+  
+  .help-modal-content h1, .help-modal-content h2, .help-modal-content h3 {
+    margin-top: 2%;
+  }
+  
+  .help-modal-content p {
+    margin-bottom: 1%;
+  }
+  
+  .help-modal-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .help-modal-content ul li {
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .help-modal-content ul li span {
+    margin-right: 1%;
+  }
+  

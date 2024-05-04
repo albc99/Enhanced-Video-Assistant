@@ -1,0 +1,10 @@
+.focusgroup-bar {
+    display:flex;
+    background-color: grey;
+    height: 1.5vh;
+    cursor: pointer;
+    border-color: black;
+    border-width: 0.2vh;
+    border-style: solid; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}

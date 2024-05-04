@@ -1,0 +1,139 @@
+/* 
+ * This CSS file styles the LandingPage component and its child components.
+ *
+ */
+.landing-page-container{
+    width:98vw;
+    height: 100vh;
+    padding: 0;
+}
+
+.eva-header{
+    color: #750442;
+    font-size: 42px;
+    margin-top:0;
+    width: 100%;
+}
+
+.main-card-buy-button{
+    padding:1% 5%;
+    height:7vh;
+    width:10vw;
+    border-radius: 1vw;
+    font-weight: 800;
+    border-style: none !important;
+    background-color:#750442;
+    color:#e7e5e2;
+    cursor: pointer;
+}
+
+.div-container{
+    display:flex; flex-direction: row; justify-content: space-between; align-items: center;
+}
+.main{
+    color:#201e1e;
+    width: 100%;
+    
+}
+.main-card-details{
+    flex:3;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.demo-video-container{
+    /* flex:3; */
+    padding-right:2%;
+    padding-left:2%;
+    /* margin-left:20vw; */
+}
+
+.demo-video{
+    width:40vw;
+    height:43vh;
+}
+.main-card{
+    display: flex;
+    background: linear-gradient(45deg,#ac98a3,#dbcdd7 );
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 4%;
+    padding-bottom:4%;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    padding-top:4vh;
+    padding-bottom: 4vh;
+    background-color: #000000;
+    color:rgb(228, 219, 227);
+    text-align: center;
+}
+.feature-card{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom:2%;
+    margin-right: 10vw;
+    border-radius: 2vw;
+    margin-bottom: 2vh;
+    margin-top:2vh;
+    box-shadow: rgba(117, 4, 66, 0.9) -10px 10px 10px -10px , rgba(117, 4, 66, 0.9) -10px 10px 10px -5px inset;
+}
+
+.feature-card-details{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    text-align:left;
+    flex-direction: column;
+}
+.feature-card-img-container{
+    flex:1;
+    margin-right: 2vw;
+    margin-left:2vw;
+}
+
+.feature-card-image{
+    width:35vw;
+    height:25vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+    height:5vh;
+    background: linear-gradient(#000000,#1b010f);
+    border: none;
+}
+
+.square-box {
+    width: 1vw;
+    height: 1vw;
+    background-color: #c8cccf;
+    /* margin-right: 4vw; */
+    border-radius:0.5vh;
+}
+.example-container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#1b010f,#6e0941);
+    width:100%;
+    /* height: 100vh; */
+    margin-bottom: 7vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    color:rgb(228, 219, 227);
+}
+

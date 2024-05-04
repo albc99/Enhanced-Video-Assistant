@@ -1,0 +1,167 @@
+.customScrubber {
+  width: 100%;
+  padding: 1vh;
+  height:100%;
+}
+
+.scrubberContainer {
+  overflow-x: auto; 
+  overflow-y: hidden;
+  width: 100%;
+  padding: 0 0px;
+}
+
+.horizontal-slider {
+  width: 95%; 
+  height: 4vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.slider-thumb {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 100;
+  background: grey;
+  /* border: 5px solid gold; */
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+
+.slider-thumb:hover, .slider-thumb.active {
+  background-color: gold;
+  width: 20px; 
+  height: 20px;
+}
+
+/* .slider-thumb.active {
+  background-color: gold;
+} */
+
+.slider-track {
+  position: relative;
+  background: #cfb456;
+  height: 7px; 
+  /* cursor: pointer; */
+  border-radius: 50px;
+}
+
+.slider-track.odd-track {
+  background: #525252;
+}
+
+.slider-track.glowing {
+  animation: 2s infinite pulse-color;
+  cursor: pointer;
+}
+
+@keyframes pulse-color {
+  50% {
+    background: #ddd;
+  }
+}
+
+/* .slider-track.odd-track:hover {
+  background: #ddd;
+} */
+
+.zoomSlider {
+
+  color: #FFA000; 
+  
+}
+
+.MuiSlider-thumb {
+  background-color: #FFC107; 
+  border: 2px solid black; 
+}
+
+.MuiSlider-track {
+  background-color: #FFD54F;
+}
+
+.MuiSlider-rail {
+  background-color: #BDBDBD; 
+}
+
+.zoomButton, .addButton {
+  padding: 1vh; 
+  font-size: 1vw; 
+   color: black;
+  background-color: #cfb456; 
+  cursor: pointer; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 4px; 
+}
+
+.addButton:hover {
+  outline: gold 2px solid;
+}
+
+.add-btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  padding: 1vh;
+  margin-left: 27%;
+  font-weight: bold;
+}
+
+.zoomButton:hover {
+  background-color: rgb(114, 87, 19); 
+}
+
+.scrubberContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #f1f1f1;
+}
+
+.scrubberContainer::-webkit-scrollbar {
+  width: 3vh; 
+  height: 1vh; 
+}
+
+.scrubberContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.scrubberContainer::-webkit-scrollbar-thumb {
+  background: #aaa; 
+  border-radius: 3px;
+  border: 1px solid #f1f1f1; 
+}
+
+.scrubberContainer::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+.zoomSliderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4vh;
+}
+
+.zoomLabel {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.zoomSlider {
+  flex-grow: 1;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+

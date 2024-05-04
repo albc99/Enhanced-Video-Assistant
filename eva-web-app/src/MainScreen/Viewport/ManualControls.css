@@ -1,0 +1,48 @@
+.video-controls-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height:5vh;
+    height: 20%;
+    padding: 1%;
+    z-index: 2;
+    /* background-color:aliceblue */
+
+}
+.time-slider-container{
+    width:100%;
+    height:30%;
+    margin-bottom: 2.7%;
+    margin-top: -1.5%;
+}
+.video-controls-row2-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+
+}
+.play-pause-audio-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 30%;
+}
+
+.audio-slider-box{
+    width:50%;
+}
+.audio-slider{
+    width: 100%;
+    position: absolute;
+}
+.video-timestamp{
+    width: 45%;
+    font-size: 0.9vw;
+    text-align: center;
+    font-weight: bold;
+}

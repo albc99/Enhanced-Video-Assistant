@@ -1,0 +1,17 @@
+/* 
+ * This CSS file styles the SidePanel component.
+ *
+ */
+.sidepanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 99%;
+    border: 0.1vh solid #cfb456;
+    border-radius: 2vh;
+    background-color: #393844;
+  }
+
+
+  

@@ -1,0 +1,204 @@
+.video-viewport-container{
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+    height: 100%;
+}
+/* .video-carousel{
+
+    width: 100%;
+    height: 100%;
+} */
+.special-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height:10%;
+    padding:1vh;
+}
+
+
+
+
+.feature-container {
+  width: 100%;
+  height: 30%;
+
+}
+/* Video Viewport */
+
+.video-viewport {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    border: 2px solid black;
+    box-sizing: border-box; 
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .carousel {
+  height:70%;
+  aspect-ratio: 16/9;
+} */
+
+
+/* from https://getcssscan.com/css-buttons-examples */
+/* CSS */
+.generate-video-btn {
+    /* padding: 0.6em 2em; */
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: #cfb456; 
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    height:100%;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-left: 1vw;
+}
+
+.generate-video-btn:disabled{
+  background-color: #e3dbdb;
+  color: #666;
+  cursor: not-allowed;
+}
+.generate-video-btn:disabled,
+.generate-video-btn:disabled:before {
+  animation: none;
+}
+  .generate-video-btn:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #afce03,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-generate-video-btn 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-generate-video-btn {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .generate-video-btn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #cfb456;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  .left-arrow-btn{
+    position: relative;
+    height: 100%;
+    margin-left: -95%;
+    top: -55%;
+    background-color: goldenrod;
+  }
+  .right-arrow-btn{
+    position: relative;
+    height: 50vh;
+    margin-left: 95%;
+    top: -55%;
+    background-color: goldenrod;
+  }
+
+  .left-arrow-btn:hover,.right-arrow-btn:hover{
+    outline: gold 2px solid;
+  }
+
+  
+
+@keyframes pulsate-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+
+
+.outputvideocontainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.download-buttonasd{
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 1vh;
+  margin-left: 80%;
+  margin-top: 3%
+
+}
+
+.download-buttonasd:hover{
+  background-color: #ffffff;
+  color: #111;
+}
+
+.grey-out-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.select-options-popup-content{
+  background-color: rgba(0, 0, 0, 0.0);
+
+}

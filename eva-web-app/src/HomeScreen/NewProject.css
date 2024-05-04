@@ -1,0 +1,114 @@
+/* 
+ * This CSS file styles the NewProject component and its child components.
+ *
+ */
+
+.new-project{
+  border-radius: 1vh;
+  margin-top: 5%;
+  height: 40vh;
+  width:20vw;
+}
+
+.new-project-popup {
+  position: fixed;
+    top: 25vh;
+    left: 40vw;
+    min-width: 25vw;
+    min-height: 45vh;
+    background-color: rgb(60, 60, 60); 
+    display: flex;
+    padding:3vh;
+    z-index: 1000; 
+    border-radius: 1vh;
+    color:black;
+    overflow: auto;
+  }
+
+  .language-select-box{
+  color:#000000;
+  margin-bottom: 5%;
+  }
+
+  .new-project-popup-content{
+    display: flex;
+    flex-direction: column;
+    row-gap:5%;
+    width: 100%;
+    height:auto;
+    color:whitesmoke;
+    overflow: auto;
+    align-items: center;
+  }
+  .new-project-form {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 100%;
+    height:auto;
+  }
+  
+  .new-project-popup input,select{
+    margin-bottom: 10%;
+  }
+
+  .new-project-popup label {
+    /* display: block; */
+    margin-bottom: 10px;
+  }
+  
+  .new-project-popup input[type="text"],
+  .new-project-popup textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .new-project-popup button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #cfb456;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1.5vh;
+  }
+  
+  .new-project-popup button:hover {
+    background-color: #ccac38;
+  }
+
+ 
+
+  .backButton {
+    font-size: 1.2vw;
+    width: fit-content;
+    align-self: flex-end;
+
+  }
+
+  .fileUpload:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .videoName {
+    color: black;
+  }
+  .createUploadButton {
+    width:fit-content;
+    font-size: 1.2vw;
+    align-self: center;
+  }
+
+  .new-project-popup-content .login-loading-wheel {
+    justify-content: center;
+    justify-self: center;
+  }

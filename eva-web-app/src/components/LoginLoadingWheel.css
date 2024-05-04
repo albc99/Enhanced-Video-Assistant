@@ -1,0 +1,14 @@
+.wheel-container{
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loading-text{
+    font-size: 1.5vw;
+    color: rgb(158, 202, 197);
+
+ 
+    
+}

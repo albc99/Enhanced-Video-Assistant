@@ -1,0 +1,29 @@
+
+.bar-dropdown, .profile-dropdown {
+    display: flex;
+    flex-direction: column;
+  
+    visibility: hidden;
+  
+    position: relative;
+  
+    background-color: #24252f;
+    color: #24252f;
+  
+    z-index: 1;
+  
+    border-radius: 0;
+  }
+  
+  .dropdown-button {
+    width: 100%;
+    height: 50px;
+  
+    border: 2px solid black;
+    border-radius: 0;
+  
+    background-color: white;
+  
+    color: black;
+  }
+  

@@ -1,0 +1,152 @@
+/* 
+ * This CSS file styles the ChatBox component.
+ *
+ */
+
+.chatbox-collapsed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.chatbox-expanded {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #2C2C34;
+  color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 99; 
+  resize: both; 
+  width: auto; 
+  height: auto; 
+  min-width: 348px;
+  max-width: 523px;
+  min-height: 250px;
+  max-height: 70%;
+}
+
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden; 
+}
+
+.chatbox-output {
+  flex-grow: 1; 
+  overflow-y: auto; 
+  padding: 10px;
+  background-color: #393844; 
+  border-bottom: 2px solid #4A4A55; 
+  scroll-behavior: smooth;
+}
+
+.chatbox-input-form {
+  padding: 10px;
+  background-color: #2C2C34; 
+  display: flex;
+  gap: 10px; 
+}
+
+.chatbox-input {
+  flex-grow: 1; 
+  padding: 10px;
+  border-radius: 20px; 
+  border: 1px solid #4A4A55; 
+  background-color: #343340; 
+  color: #FFFFFF; 
+}
+
+
+.chabox-input-send, .chatbox-clear-history {
+  background-color: #667B68; 
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px; 
+  cursor: pointer;
+  color: #FFFFFF; 
+}
+
+
+.chabox-input-send:hover, .chatbox-clear-history:hover {
+  background-color: #85A692;
+}
+
+.message-text {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 10px; 
+  background-color: #4A4A55; 
+  color: #EDEDED; 
+}
+
+
+.user-message {
+  align-self: flex-end; 
+  background-color: #5C6BC0; 
+}
+
+.eva-message {
+  align-self: flex-start; 
+  background-color: #667B68; 
+}
+
+
+.chat-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  
+  background-color: #cfb456;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.expand-circle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  background-color: #cfb456;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.expand-circle-button:hover {
+  background-color: #766500;
+}
+
+.chatbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.chatbox-title {
+  font-size: 1.5em; 
+  font-weight: bold; 
+  flex-grow: 1;
+}

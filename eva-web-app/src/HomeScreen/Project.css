@@ -1,0 +1,137 @@
+/* 
+ * This CSS file styles the Project component and its child components.
+ *
+ */
+.recent-project{
+  border-radius: 1vh;
+  height: 40vh;
+  width:20vw;
+}
+ .thumbnail-btn {
+
+    height: 35vh;
+    width: 20vw;
+    border-radius: 1vh;
+  
+    background-color: #00000099;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .new-project:hover, .recent-project:hover,
+  .new-project:focus, .recent-project:focus {
+    outline: calc(0.2vw + 0.1vh) solid gold;
+    animation: 0.3s buttonHoverScale ease-out;
+    transform: scale(1.05);
+  }
+  
+  .project-delete-btn{
+    background-color: #cfb456;
+    color: black;
+    position: relative;
+    z-index:0;
+  }
+  @keyframes buttonHoverScale {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  .recent-prject-bottom-row{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+  }
+
+  
+ .thumbnail-btn > img {
+    object-fit:fill;
+  }
+  
+.thumbnail-btn > img {
+    filter: invert(1);
+    width: 25%;
+    aspect-ratio: 1/1;
+  }
+  .delete-project-popup {
+    position: fixed;
+    top: 25vh;
+    left: 40vw;
+    background-color: rgb(60, 60, 60); 
+    display: flex;
+    padding:3vh;
+    z-index: 1000; 
+    border-radius: 1vh;
+    color:black;
+  }
+  .delete-project-popup-content {
+    display: flex;
+    flex-direction: column;
+    row-gap:5%;
+    width: 15vw;
+    height:80%;
+    color:whitesmoke;
+    justify-content: space-around; 
+    align-items: center;
+  }
+
+  .delete-project-popup button {
+    padding: 0.5vh 2vw; /* Reduce the vertical padding */
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    border: none;
+    background-color: #5c6bc0;
+    color: white;
+    border-radius: 0.4vh;
+    cursor: pointer;
+    height: 4vh;
+    line-height: 1vh; 
+  }
+  .delete-project-popup button:hover {
+    background-color: #3949ab;
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+.delete-project-popup-button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vh;
+
+
+}
+  .notificationBox {
+    position: fixed;
+    top: 1vh;
+    right: 5vw;
+    padding: 1vh;
+    width: 10vw;
+    height: 5vh;
+    background-color: rgb(152, 149, 149);
+    color: white;
+    border-radius: 0.5vh;
+    animation: fadeOut 2s linear;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .thumbnailContainer {
+    
+    width: 100%;
+    background-color: #00000099;
+    overflow: hidden;
+
+  }

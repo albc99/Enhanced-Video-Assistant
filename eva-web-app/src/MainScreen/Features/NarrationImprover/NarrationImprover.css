@@ -1,0 +1,107 @@
+/* 
+ * This CSS file styles the NarrationImprover component.
+ *
+ */
+
+.narration-improver {
+  background: #393844;
+  display: flex;
+  flex-direction: column;
+  padding: 1vh;
+  border-radius: 10%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width:100%;
+}
+
+.narration-improver h2 {
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.narration-improver p {
+  margin-bottom: 8px;
+  color: #000;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#edits_list {
+  text-align: center; 
+  width: 100%; 
+}
+
+#edits_list li {
+  padding: 2px;
+}
+
+.feature-buttons button, .buttons button, .generate-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #E0E0E0;
+  color: #000;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feature-buttons button.active, .feature-buttons button:hover,
+.buttons button, .buttons button:hover,
+.ni-generate-btn {
+
+  margin-left:20%;
+
+  background-color: #cfb456; /* Active and hover state */
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding:1vh;
+}
+
+#feedback-section {
+  overflow: hidden;
+  text-align: center;
+  height: auto;
+}
+
+#feedback-section h3{
+  text-align: center;
+}
+
+.audio-section, .feedback-section {
+  margin-bottom: 16px;
+}
+
+.audio-section h3, .feedback-section h2 {
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.content {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+  
+}
+
+.ni-generate-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.suggested-edit{
+  background-color: #1c1d22;
+
+}
+
+.narration-content{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#timestamps-text{
+  font-size: 1vw;
+  color: white;
+}
