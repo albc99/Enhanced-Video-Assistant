@@ -1,0 +1,32 @@
+fastapi
+uvicorn
+gunicorn
+pydantic
+# PyYAML==6.0.1
+SQLAlchemy
+python-multipart
+# uvloop
+httptools
+azure-storage-blob
+pyodbc
+Jinja2
+numpy
+pydub
+transformers
+ffmpeg
+scikit-learn
+pyloudnorm
+requests
+sentencepiece
+# datasets
+ffmpeg-python
+accelerate
+openai==1.9.0
+moviepy
+ffmpeg-normalize
+pyjwt
+typing
+itsdangerous
+starlette
+huggingface-hub
+urllib3
