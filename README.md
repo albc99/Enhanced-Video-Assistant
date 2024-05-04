@@ -35,9 +35,11 @@ EVA is an automated video editing web application designed to streamline video p
 - Wget installed on your machine
 
 ### Credentials:
-There are two credentials files (json), each located at: /eva-fastapi-backend/app/database/credentials.json and /eva-fastapi-backend/app/features/credentials.json
+There are two credentials files (json), each located at: 
+```/eva-fastapi-backend/app/database/credentials.json``` 
+and ```/eva-fastapi-backend/app/features/credentials.json```
 
-Both credentials.json have to be filled accordingly
+Both credentials.json must be filled accordingly
 
 ### Downloading wget:
 #### Mac OS:
